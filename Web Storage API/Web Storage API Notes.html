@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Web Storage API Notes</title>
+    
+    <!-- Cascading Style Sheets -->
+    <link rel="stylesheet" href="../assets/style.css">    
+</head>
+<body>
+    <h1 class="Heading">Advance Web Development: Day 1</h1>
+
+    <div id="newTopic">
+        <h2 id="heading">Web Storage API</h2>
+        Two types of web storages:
+        <ul class="list">
+            <li class="list-element"><strong class="syntax">sessionStorage():</strong> destroyed once the browser is closed</li>
+            <li class="list-element"><strong class="syntax">localStorage():</strong> has no expiration date</li>
+        </ul>
+
+        <div id="subTopic">
+            <h3 id="subHeading">Local Storage</h3>
+            <div>
+                The data is stored as key/value pairs.
+                <ul class="list">
+                    <li class="list-element">
+                        Storing a Value: <strong class="syntax">localStorage.setItem("key", "value");</strong>
+                    </li>
+                    <li class="list-element">
+                        Fetching a Value: <strong class="syntax">localStorage.getItem("key");</strong>
+                    </li>
+                    <li class="list-element">
+                        Removing a Value: <strong class="syntax">localStorage.removeItem("key");</strong>
+                    </li>
+                    <li class="list-element">
+                        Removing All Values: <strong class="syntax">localStorage.clear();</strong>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div id="subTopic">
+            <h3 id="subHeading">Session Storage</h3>
+            <div>
+                The syntax for session storage is similar to that of Session Storage. The data is stored as key/value pairs.
+                <ul class="list">
+                    <li class="list-element">
+                        Storing a Value: <strong class="syntax">sessionStorage.setItem("key", "value");</strong>
+                    </li>
+                    <li class="list-element">
+                        Fetching a Value: <strong class="syntax">sessionStorage.getItem("key");</strong>
+                    </li>
+                    <li class="list-element">
+                        Removing a Value: <strong class="syntax">sessionStorage.removeItem("key");</strong>
+                    </li>
+                    <li class="list-element">
+                        Removing All Values: <strong class="syntax">sessionStorage.clear();</strong>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; Developer Student Club, KJSIEIT. All rights reserved.
+    </footer>
+</body>
+</html>

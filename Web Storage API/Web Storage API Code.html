@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Web Storage API Code</title>
+
+    <!-- Cascading Style Sheets -->
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+    <h1 class="Heading">Web Storage API</h1>
+
+    <div id="newTopic">
+        <h2 id="heading">Local Storage</h2>
+        <div id="local_storage"></div>
+    </div>
+
+    <div id="newTopic">
+        <h2 id="heading">Session Storage</h2>
+        <div id="session_storage"></div>
+    </div>
+
+    <footer>
+        &copy; Developer Student Club, KJSIEIT. All rights reserved.
+    </footer>
+
+    <script>
+        // Local Storage
+        // Storing a Value
+        localStorage.setItem("local_name", "DSC");
+        
+        // Fetching stored value
+        // localStorage.getItem('local_name');
+        document.getElementById('local_storage').innerHTML = "Name = " + localStorage.getItem("local_name");
+        
+        // Destroying stored value
+        localStorage.removeItem("local_name");
+        
+        // Destroying all the set values
+        localStorage.clear();
+
+        // Session Storage
+        // Storing a Value
+        sessionStorage.setItem("sessionKey", "New 1");
+        
+        // Fetching stored value
+        // sessionStorage.getItem('local_name');
+        document.getElementById('session_storage').innerHTML = "SessionKey = " + sessionStorage.getItem("sessionKey");
+        
+        // Destroying stored value
+        sessionStorage.removeItem("sessionKey");
+        
+        // Destroying all the set values
+        sessionStorage.clear();
+    </script>
+</body>
+</html>

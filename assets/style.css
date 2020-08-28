@@ -1,0 +1,72 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+/* Styles */
+
+/* Dark Mode */
+:root {
+    --main-bg-color: #303030; 
+    --main-font-color: #fff;
+    --heading-color: #ff9216;
+    --sub-heading-color: #FFF924;
+    --boder-color: #2A38F5;
+    --syntax: #66FFD1;
+}
+
+body {
+    font-family: Montserrat;
+    padding: 8px 16px;
+    margin: 0;
+    font-size: 16px;
+    background-color: var(--main-bg-color);
+    color: var(--main-font-color);
+}
+
+footer {
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    color: var(--heading-color);
+}
+
+.Heading {
+    text-align: center;
+    padding-bottom: 8px;
+    border-bottom: solid 1px var(--boder-color);
+}
+
+#newTopic {
+    border-bottom: solid 1px var(--boder-color);
+    padding: 8px 0px;
+    margin: 0px 0px 8px;
+}
+
+#newTopic #heading{
+    margin: 0px 0px 8px;
+}
+
+#subTopic {
+    margin: 8px 0px;
+}
+
+#subTopic #subHeading{
+    font-family: Montserrat;
+    margin: 0px 0px 4px;
+    font-weight: 900;
+    color: var(--sub-heading-color);
+}
+
+.list{
+    padding-left: 24px;
+    margin: 8px 0px;
+}
+
+.list .list-element {
+    margin-bottom: 8px;
+}
+
+.syntax {
+    color: var(--syntax);
+}
