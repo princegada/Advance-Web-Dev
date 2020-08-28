@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Canvas Code</title>
+
+    <!-- Cascading Style Sheets -->
+    <link rel="stylesheet" href="../assets/style.css">
+
+    <style>
+        .region {
+            border: solid 1px #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="Heading">Canvas</h1>
+    <div id="newTopic">
+        <canvas width="600" height="600" class="region" id="canvas_region">
+
+        </canvas>
+    </div>
+
+    <script>
+        var canvas = document.getElementById("canvas_region"); 
+        var content = canvas.getContext("2d");
+        content.fillStyle = "#fff"; // Sets Colour to White
+        content.fillRect(25, 25, 200, 400); // Rectangle starting at point (25, 25) with width 200, height 400
+        
+        content.fillStyle = "#000";
+        content.beginPath(); // Starts the path
+        content.moveTo(25, 25); // Moves the cursor to (25, 25)
+        content.lineTo(225, 425); // Draws a Line to (225, 425)
+        content.closePath(); // Closes the Path
+        content.stroke(); // Ends the drawing
+
+        // Canvas Transformations
+        // content.fillStyle = "#f00";
+
+        // Translation
+        // Shifts Origin of Canvas by (x, y)
+        // content.translate(100, 150);
+        // content.fillRect(25, 25, 200, 400);
+
+        // Rotation
+        // Rotates the Canvas by certain value. The value should be specified in Radians only
+        // content.rotate( (Math.PI / 180) * 25);
+        // content.fillRect(25, 25, 200, 400);
+
+        // Scale
+        // Enlarges the elements in X and Y direction 
+        // content.scale(2, 2);
+        // content.fillRect(12.5, 12.5, 100, 200);
+    </script>
+
+    <footer>
+        &copy; Developer Student Club, KJSIEIT. All rights reserved.
+    </footer>
+</body>
+</html>

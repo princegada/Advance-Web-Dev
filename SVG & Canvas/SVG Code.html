@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>SVG Code</title>
+
+    <!-- Cascading Style Sheets -->
+    <link rel="stylesheet" href="../assets/style.css">
+
+    <style>
+        .region {
+            border: solid 1px #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="Heading">SVG</h1>
+    <div id="newTopic">
+        <h2 id="subHeading">Elements</h2>
+        <svg width="600" height="600" class="region">
+
+            <!-- Circle with Center (100, 100) and Radius 75 -->
+            <circle cx="100" cy="100" r="75" fill="#01FFD0" />
+            <!-- 
+                cx -> X Co-ordinate of Center
+                cy -> Y Co-ordinate of Center
+                r -> Radius
+                fill -> Colour to be filled inside the circle 
+            -->
+
+            <!-- Rectangle with Widht 150, Height 150, and starting co-ordinates (200, 25) -->
+            <rect width="150" height="150" x="200" y="25" fill="#01FFD0" rx="10" ry="10" stroke="#fff" />
+            <!-- 
+                x -> starting x co-ordinate
+                y -> starting y co-ordinate
+                rx -> border radius for x
+                ry -> border radius for y
+                stroke -> border colour 
+            -->
+            
+            <!-- Ellipse with Center (175, 300) and width 150, height 75 -->
+            <ellipse cx="175" cy="300" rx="150" ry="75" style="fill:#01FFD0" />
+            <!-- 
+                cx -> center x co-ordinate
+                cy -> center y co-ordinate
+                rx -> width
+                ry -> height
+            -->
+
+            <!-- Polygons -->
+            <!-- <polygon points="350 350, 450 350, 450 0" style="fill: #01FFD0; stroke:#fff;" /> -->
+            
+            <!-- Lines -->
+            <!-- <line x1="400" y1="400" x2="600" y2="600" style="stroke:#fff; stroke-linecap:round; stroke-width:5"  /> -->
+            
+            <!-- Poly Lines -->
+            <!-- <polyline style="stroke-linejoin:miter; stroke:#fff; stroke-width:5; fill: none;" points="100 100, 150 150, 200 100" /> -->
+        </svg>
+    </div>
+
+    <div id="newTopic">
+        <h2 id="subHeading">Animation</h2>
+        <svg width="600" height="600" class="region">
+
+            <!-- Circle with Center (100, 100) and Radius 75 -->
+            <circle cx="100" cy="100" r="75" fill="#01FFD0">
+                <!-- Animation -->
+                <animate attributeName="cx" from="0" to="300" dur="3s" fill="freeze" repeatCount="2"/> 
+                <!-- 
+                    attributeName -> Which attribute to be changed
+                    from -> starting point of the attribute
+                    to -> ending point of the attribute
+                    dur -> in how much time the animation has to be completed
+                    fill -> remove (sets back to original values of the element after animation is over) / 
+                            freeze (remains at the same position where the animation got over)
+                    repeatCount -> no. of times animation has to be repeated
+                -->
+            </circle>
+        </svg>
+    </div>
+
+    <div id="newTopic">
+        <h2 id="subHeading">Path</h2>
+        <svg width="600" height="600" class="region">
+            <!-- Path -->
+            <path d="M25 25 L25 225 L225 225 L225 25  Z" style="stroke:#fff;  fill:orange;" />
+        </svg>
+    </div>
+
+    <footer>
+        &copy; Developer Student Club, KJSIEIT. All rights reserved.
+    </footer>
+</body>
+</html>

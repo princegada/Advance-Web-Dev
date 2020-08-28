@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>SVG & Canvas Notes</title>
+
+    <!-- Cascading Style Sheets -->
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+    <h1 class="Heading">Advance Web Development: Day 3</h1>
+
+    <div id="newTopic">
+        <h2 id="heading">SVG</h2>
+        SVG stands for <strong>S</strong>calable <strong>V</strong>ector <strong>G</strong>raphics and
+        is not pixel-based, so it can be magnified infinitely with no loss of quality. 
+        There are two ways to use SVG in webpages.
+        <ul class="list">
+            <li class="list-element">
+                Directly include the image in svg file format: 
+                <span class="syntax">&lt;img src="sample.svg" alt="Sample SVG File"&gt;</code></span>
+            </li>
+            <li class="list-element">
+                Create a SVG element tag with two attributes - width and height:
+                <span class="syntax">&lt;svg width="500" height="500"&gt;&lt;/svg&gt;</span>
+            </li>
+        </ul>
+        To create various shapes in SVG we use different tags. 
+
+        <div id="subTopic">
+            <h3 id="subHeading">Animations</h3>
+            <div>
+                SVG animations can be created using the <span class="syntax">&lt;animate /&gt;</span> tag. 
+                Note: <strong>It does not have a closing tag.</strong>  
+            </div>
+        </div>
+
+        <div id="subTopic">
+            <h3 id="subHeading">Path</h3>
+            <div>
+                SVG elements and shapes can also be created using the <span class="syntax">&lt;path /&gt;</span> tag. 
+                Note: <strong>It does not have a closing tag.</strong>
+            </div>
+        </div>
+    </div>
+
+    <div id="newTopic">
+        <h2 id="heading">Canvas</h2>
+        Canvas is used to draw graphics that include everything from simple lines to complex graphic objects.
+        Syntax:
+        <span class="syntax">&lt;canvas id="canvas_area" width="500" height="500"&gt;&lt;/canvas&gt;</span>
+        <br>
+        <br>
+        Canvas element is only a container for graphics. Hence we must use a script to actually draw the graphics (usually JavaScript).
+    </div>
+
+    <footer>
+        &copy; Developer Student Club, KJSIEIT. All rights reserved.
+    </footer>
+</body>
+</html>
