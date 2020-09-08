@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Shadow Notes</title>
+
+    <!-- Cascading Style Sheets -->
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+    <h1 class="Heading">Advance Web Development: Day 4</h1>
+
+    <div id="newTopic">
+        <h2 id="heading">Box Shadow</h2>
+        Components of the box-shadow property are decoded by browsers in the following manner:
+        <ul class="list">
+            <li class="list-element">
+                The first length for the horizontal offset will cast the shadow to the right of the box (required)
+            </li>
+            <li class="list-element">
+                The second length is for the vertical offset that will cast the shadow to below the box (required)
+            </li>
+            <li class="list-element">
+                The color of the shadow (optional)
+            </li>
+        </ul>
+        Syntax: <span class="syntax">box-shadow: 10px 12px #ff00ee;</span>
+        <br>
+        <br>
+        <div id="subTopic">
+            <h3 id="subHeading">Blur & Spread</h3>
+            <div>
+                These are also two optional values for the box-shadow element. The blur and spread values should be used before the color value.
+                Syntax: <span class="syntax">box-shadow: 10px 12px 4px 4px #ff00ee;</span>
+            </div>
+        </div>
+        <br>
+        <div id="subTopic">
+            <h3 id="subHeading">Negative Values</h3>
+            <div>
+                Negative values can also be used for the box-shadow property. Note:
+                <ul class="list">
+                    <li class="list-element">
+                        <strong>horizontal offset:</strong> the shadow will be to the left of the box
+                    </li>
+                    <li class="list-element">
+                        <strong>vertical offset:</strong> the shadow will be above the box
+                    </li>
+                    <li class="list-element">
+                        <strong>blur radius:</strong> negative values are not allowed
+                    </li>
+                    <li class="list-element">
+                        <strong>spread radius:</strong> negative values will cause the shadow to shrink
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div id="subTopic">
+            <h3 id="subHeading">Inner Shadow</h3>
+            <div>
+                To show an inset shadow, just add the inset keyword.
+                Syntax: <span class="syntax">box-shadow: inset 10px 12px 4px 4px #ff00ee;</span>
+            </div>
+        </div>
+        <br>
+        <div id="subTopic">
+            <h3 id="subHeading">Multiple Shadows</h3>
+            <div>
+                To create multiple shadows, just separate each shadow with a comma ","
+                <br>
+                Syntax:
+                <br>
+                <span class="syntax">
+                    box-shadow:0 0 10px 4px #FF6347, <br>
+                                0 0 10px 30px #FFDAB9, <br>
+                                30px 0 20px 30px #B0E0E6;
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div id="newTopic">
+        <h2 id="heading">Text Shadow</h2>
+        The text-shadow property defines one or more comma-separated shadow effects, to be applied to the 
+        text content of the current element.
+        <br>
+        <br>
+        Syntax: <span class="syntax">text-shadow: x-offset y-offset blur colour;</span>
+    </div>
+
+    <footer>
+        &copy; Developer Student Club, KJSIEIT. All rights reserved.
+    </footer>
+</body>
+</html>

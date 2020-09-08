@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Font Face Notes & Code</title>
+
+    <!-- Cascading Style Sheets -->
+    <link rel="stylesheet" href="../assets/style.css">
+    <style>
+        @font-face {
+            /* Specifying the name of the font so that it can be called on later*/
+            font-family: 'Ross';
+            /* Specifying the location of the font file*/
+            src: url('../assets/Satisfy-Regular.ttf');
+        }
+        
+        .example {
+            font-family: 'Ross';
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="Heading">Advance Web Development: Day 4</h1>
+
+    <div id="newTopic">
+        <h2 id="heading">Font Face</h2>
+        The <span class="syntax">@font-face</span> rule allows custom fonts to be loaded into a webpage. 
+        Most used and supported font file are:
+        <ul class="list">
+            <li class="list-element">
+                <strong>True Type Fonts (ttf)</strong>
+            </li>
+            <li class="list-element">
+                <strong>OpenType Fonts (otf)</strong>
+            </li>
+        </ul>
+        <br>
+        <div id="subTopic">
+            <h2 id="subHeading">Example</h2>
+            <div>
+                <span class="example">
+                    This is the sample text.
+                </span>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; Developer Student Club, KJSIEIT. All rights reserved.
+    </footer>
+</body>
+</html>

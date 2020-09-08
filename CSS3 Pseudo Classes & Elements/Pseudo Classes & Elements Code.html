@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Pseudo Classes & Elements Code</title>
+
+    <!-- Cascading Style Sheets -->
+    <link rel="stylesheet" href="../assets/style.css">
+    <style>
+        /* Pseudo Classes starts here*/
+        .example1 {
+            border: solid 1px #fff;
+            padding: 8px;
+        }
+        
+        /* To change the text colour of the first paragraph to Red*/
+        /* .example1 p:first-child {
+            color: red; 
+        } */
+
+        /* To change the text colour of the last paragraph to Yellow */
+        /* .example1 p:last-child {
+            color: yellow;
+        } */
+
+
+        /* Pseudo Elements starts here*/
+        .example2 {
+            border: solid 1px orchid;
+            padding: 8px;
+        }
+
+        /* To change the text colour of the first line of each paragraph to Red */
+        /* .example2 p::first-line {
+            color: red;
+        } */
+
+        /* To change the text colour of the first letter of each paragraph to Yellow */
+        /* .example2 p::first-letter {
+            color: yellow;
+        } */
+
+        /* To change the text colour of the selected text to Blue */
+        /* .example2 p::selection {
+            color: blue;
+        } */
+
+        /* To add some content before each paragraph*/
+        /* .example2 p::before {
+            content: url("../assets/icon.png");
+        } */
+
+        /* To add some content after each paragraph*/
+        /* .example2 p::after {
+            content: url("../assets/icon.png");
+        } */
+
+    </style>
+</head>
+<body>
+    <h1 class="Heading">Pseudo Classes & Elements</h1>
+    <div id="newTopic">
+        <h2 id="heading">Pseudo Classes</h2>
+        <div class="example1">
+            <p>
+                1- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, perspiciatis impedit, eum voluptates aliquam optio velit alias excepturi, eos minima sed quas quasi pariatur nisi tempora dolorum quos molestias nam.
+            </p>
+            <p>
+                2- Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nisi fuga quis odio reiciendis obcaecati neque nulla dolorem ab, eos tenetur sequi dolorum autem, ipsa, consequuntur voluptate omnis praesentium facilis?
+            </p>
+            <p>
+                3- Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam voluptatibus molestias consequuntur omnis quo accusamus recusandae sed corrupti blanditiis quod, laborum voluptate culpa eius! Quidem, at. Incidunt reiciendis vel nobis!
+            </p>
+        </div>
+    </div>
+
+    <div id="newTopic">
+        <h2 id="heading">Pseudo Elements</h2>
+        <div class="example2">
+            <p>
+                1- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, perspiciatis impedit, eum voluptates aliquam optio velit alias excepturi, eos minima sed quas quasi pariatur nisi tempora dolorum quos molestias nam.
+            </p>
+            <p>
+                2- Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nisi fuga quis odio reiciendis obcaecati neque nulla dolorem ab, eos tenetur sequi dolorum autem, ipsa, consequuntur voluptate omnis praesentium facilis?
+            </p>
+            <p>
+                3- Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam voluptatibus molestias consequuntur omnis quo accusamus recusandae sed corrupti blanditiis quod, laborum voluptate culpa eius! Quidem, at. Incidunt reiciendis vel nobis!
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; Developer Student Club, KJSIEIT. All rights reserved.
+    </footer>
+</body>
+</html>

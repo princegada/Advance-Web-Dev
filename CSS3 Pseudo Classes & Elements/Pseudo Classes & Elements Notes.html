@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Pseudo Classes & Elements Notes</title>
+
+    <!-- Cascading Style Sheets -->
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+    <h1 class="Heading">Advance Web Development: Day 4</h1>
+
+    <div id="newTopic">
+        <h2 id="heaidng">Pseudo Clasess</h2>
+        The CSS pseudo-classes allow us to style elements, or parts of elements, that exist in the document tree without using JavaScript or any other scripts. 
+        A pseudo-class starts with a <span class="syntax">:</span> (colon).
+        <br>
+        <br>
+        The most commonly used pseudo-classes are <span class="syntax">:first-child</span> and <span class="syntax">:last-child</span>
+        <br>
+        <br>
+        <div id="subTopic">
+            <h3 id="subHeading" class="syntax">:first-child</h3>
+            <div>
+                The <span class="syntax">:first-child</span> pseudo-class matches an element that is the first child element of some other element.
+            </div>
+        </div>
+        <br>
+        <div id="subTopic">
+            <h3 id="subHeading" class="syntax">:last-child</h3>
+            <div>
+                The <span class="syntax">:last-child</span> pseudo-class matches an element that is the last child element of some other element.           
+            </div>
+        </div>
+    </div>
+
+    <div id="newTopic">
+        <h2 id="heaidng">Pseudo Elements</h2>
+        Pseudo elements are used to select specific parts of an element.
+        There are five pseudo elements in CSS, each starting with a double colon <span class="syntax">::</span>
+        <ul class="list">
+            <li class="list-element">
+                <span class="syntax">::first-line</span> - the first line of the text in a selector
+            </li>
+            <li class="list-element">
+                <span class="syntax">::first-letter</span> - the first letter of the text in a selector
+            </li>
+            <li class="list-element">
+                <span class="syntax">::selection</span> - selects the portion of an element that is selected by a user
+            </li>
+            <li class="list-element">
+                <span class="syntax">::before</span> - inserts some content before an element
+            </li>
+            <li class="list-element">
+                <span class="syntax">::after</span> - inserts some content after an element
+            </li>
+        </ul>
+    </div>
+
+    <footer>
+        &copy; Developer Student Club, KJSIEIT. All rights reserved.
+    </footer>
+</body>
+</html>

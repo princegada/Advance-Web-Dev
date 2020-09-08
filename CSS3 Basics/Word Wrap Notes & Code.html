@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Word Wrap Notes & Code</title>
+
+    <!-- Cascading Style Sheets -->
+    <link rel="stylesheet" href="../assets/style.css">
+    <style>
+        .example {
+            width: 500px;
+            border: solid 1px #fff;
+            margin-bottom: 16px;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="Heading">Advance Web Development: Day 4</h1>
+
+    <div id="newTopic">
+        <h2 id="heading">Word Wrap</h2>
+        The word-wrap property allows long words to be broken and wrapped into the next line. It takes two values:
+        <ul class="list">
+            <li class="list-element">
+                <span class="syntax">word-wrap: break-word;</span> the browser breaks a word when it is too long to fit within its container.
+            </li>
+            <li class="list-element">
+                <span class="syntax">word-wrap: normal;</span> No changes are made
+            </li>
+        </ul>
+        <br>
+        <div id="subTopic">
+            <h2 id="subHeading">Example</h2>
+            <div>
+                <!-- Setting word wrap as normal -->
+                <div class="example" style="word-wrap: normal;"> 
+                    Example for <span class="syntax">word-wrap: normal;</span> wsedfgbhnjmk,mjhgtfresdfrghnjmkjnhbgfrdewsedrftghyjkmjhgtfrderfghjkmjhygtfrerftgyhjjhygtfreddrfgh
+                </div>
+
+                <!-- Setting word wrap as break-word -->
+                <div class="example" style="word-wrap: break-word;">
+                    Example for <span class="syntax">word-wrap: break-word;</span> wsedfgbhnjmk,mjhgtfresdfrghnjmkjnhbgfrdewsedrftghyjkmjhgtfrderfghjkmjhygtfrerftgyhjjhygtfreddrfgh
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; Developer Student Club, KJSIEIT. All rights reserved.
+    </footer>
+</body>
+</html>
