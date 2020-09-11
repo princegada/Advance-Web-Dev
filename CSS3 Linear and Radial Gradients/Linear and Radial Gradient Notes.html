@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Linear and Radial Gradient Notes</title>
+
+    <!-- Cascading Style Sheets -->
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+    <h1 class="Heading">Advance Web Development: Day 5</h1>
+
+    <div id="newTopic">
+        <h2 id="heading">Linear Gradient</h2>
+        To create a linear gradient, you must define at least two color stops. Color stops are the colors 
+        among which you want to render smooth transitions. You can also set a starting point and a 
+        direction - or an angle - along with the gradient effect.        
+        <br>
+        <br>
+        Syntax: <span class="syntax">background: linear-gradient(colour_Stop_1, colour_Stop_2);</span>
+        <br>
+        <br>
+        <div id="subTopic">
+            <h3 id="subHeading">Colour Stops</h3>
+            <div>
+                Colors can be added one after the other, separated with a comma.                
+                Syntax: <span class="syntax">background:linear-gradient(colour 1, colour 2, colour 3...);</span>
+            </div>
+            <br>
+            <div>
+                Color stop positions can be specified for each color.
+                Syntax: <span class="syntax">background:linear-gradient(colour_1 20%, colour_2 30%, colour_3 85%);</span>
+                <br>    
+                Colour stops can be also be written in <strong>px, em, etc.
+            </div>
+        </div>
+        <br>
+        <div id="subTopic">
+            <h3 id="subHeading">Direction of the Gradient</h3>
+            <div>
+                Syntax: <span class="syntax">background:linear-gradient(direction, colour 1, colour 2, colour 3...);</span>
+                <br>
+                Directions supported are: left, right, top, bottom. We can also add combinations like bottom right, etc.
+            </div>
+        </div>
+        <br>
+        <div id="subTopic">
+            <h3 id="subHeading">Angle of the Gradient</h3>
+            <div>
+                Syntax: <span class="syntax">background:linear-gradient(100deg, colour 1, colour 2, colour 3...);</span>
+            </div>
+        </div>
+        <br>
+        <div id="subTopic">
+            <h3 id="subHeading">Repeating a Linear-Gradient</h3>
+            <div>
+                The repeating-linear-gradient() function is used to repeat a linear gradient:
+                Syntax: <span class="syntax">background:repeating-linear-gradient(blue, green 20px);</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="newTopic">
+        <h2 id="heading">Radial Gradient</h2>
+        To create a radial gradient, you must define at least two color stop and are defined by its center.  
+        <br>
+        <br>
+        Syntax: <span class="syntax">background: radial-gradient(position, shape or size, color-stops);</span>
+        <br>
+        <br>
+        The first value defines the gradient position. We can use a descriptive keyword, such as top, bottom, 
+        center, or left; or we can specify, for example, 50% 50% to set the gradient at the center or 0% 0% to 
+        set the gradient to start at top left.
+        <br>
+        <br>
+        Values supported for shape or size are: ellipse(default) and circle
+    </div>
+
+    <footer>
+        &copy; Developer Student Club, KJSIEIT. All rights reserved.
+    </footer>
+</body>
+</html>

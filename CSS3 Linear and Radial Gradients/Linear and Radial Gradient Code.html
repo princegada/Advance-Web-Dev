@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Linear and Radial Gradient Code</title>
+
+    <!-- Cascading Style Sheets -->
+    <link rel="stylesheet" href="../assets/style.css">
+    <style>
+        .example1 {
+            width: 300px; 
+            height: 200px;
+            color: #FFF;  
+            border: solid 1px #000;
+
+            /* Linear Gradient starts here */
+            /* background:linear-gradient(direction/angle, colour stops) */
+            /* background:linear-gradient(#159957 40%, #155799); */
+            background:-webkit-linear-gradient(#56CCF2, red);
+            /* background:-webkit-linear-gradient(left, #56CCF2, red 55%); */
+            /* background:-webkit-linear-gradient(60deg, #56CCF2, red 55%); */
+
+            /* background:-repeating-linear-gradient(direction/angle, colour stops) */
+            /* background:-webkit-repeating-linear-gradient(left, #56CCF2, #2F80ED 20px); */
+        }
+
+        .example2 {
+            width: 300px; 
+            height: 400px;
+            color: #FFF;  
+            border: solid 1px #000;
+
+            /* Radial Gradient starts here */
+            /* background:radial-gradient(center position, shape, colour stops) */
+            background:-webkit-radial-gradient(red, yellow);
+            /* background:-webkit-radial-gradient(circle, red, yellow);  */
+            /* background:-webkit-radial-gradient(top left, red, yellow);  */
+            /* background:-webkit-radial-gradient(top left, circle, #159957 40%, #155799);  */
+        }
+    </style> 
+</head>
+<body>
+    <h1 class="Heading">Gradients</h1>
+
+    <div id="newTopic">
+        <h2 id="heading">Linear Gradient</h2>
+        <div class="example1"></div>
+    </div>
+
+    <div id="newTopic">
+        <h2 id="heading">Radial Gradient</h2>
+        <div class="example2"></div>
+    </div>
+
+    <footer>
+        &copy; Developer Student Club, KJSIEIT. All rights reserved.
+    </footer>
+</body>
+</html>
